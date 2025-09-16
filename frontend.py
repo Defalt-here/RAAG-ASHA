@@ -1,9 +1,9 @@
 import streamlit as st
 from handle_gemini import ask_gemini
 
-st.set_page_config(page_title="RDS + Gemini Chat", page_icon="🤖")
-st.title("💬 Chat with RDS + Gemini")
-
+st.set_page_config(page_title="RAAG - ASHA", page_icon="🤖")
+st.title("RAG bot for ASHA workers💬")
+st.text("RAAG-ASHA is essentially a Retrieval Augmented Generated bot trained on govt. issued training material discussing the day to day responsibilities of ASHA workers for quick reference, in any language they want")
 if "chat_history" not in st.session_state:
     st.session_state.chat_history = []
 
